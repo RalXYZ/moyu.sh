@@ -2,7 +2,7 @@
 
 Welcome!  
 You can create a JUNK file in a specified size, 
-while looks just like a normal file.  
+which looks just like a normal file.  
 This shell scrip is great for you to deal with an irresponsible professor.  
 
 ### Run
