@@ -5,12 +5,13 @@ You can create a JUNK file in a specified size,
 which looks just like a normal file.  
 This shell script is great for you to deal with an irresponsible professor.  
 
-### Run
+### Help
 ```sh
 sh ./moyu.sh
+# Run this shell script with no argument for help 
 ```
 
-### Result after interacting with this shell script
+### Result
 ```sh
 $ ls -alh
 total 4.5M
