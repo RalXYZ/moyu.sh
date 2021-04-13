@@ -1,3 +1,5 @@
+#!/usr/bin/sh
+
 argv_0=$0
 argv_1=$1
 argv_2=$2
@@ -10,9 +12,9 @@ case $argc in
     echo "  You can create a JUNK file in a specified size, which looks just like a normal file"
     echo "  This shell script is great for you to deal with an irresponsible professor"
     echo "Before using, you are suggested to:"
-    echo "  alias moyu='sh `pwd`/${script_name}'"
+    echo "  chmod u+x moyu.sh"
     echo "Usage:"
-    echo "  moyu FILE_PATH FILE_SIZE"
+    echo "  ./moyu.sh FILE_PATH FILE_SIZE"
     echo "  Example: The command 'moyu cs101-lab1.docx 20' will generate 'cs101-lab1.docx' sized 20K"
     echo "Have fun!"
     exit 0

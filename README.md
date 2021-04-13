@@ -1,18 +1,36 @@
 # 摸鱼.sh
 
+**Good news: `moyu.pl` has been added!**  
+
 Welcome!  
 You can create a JUNK file in a specified size, 
 which looks just like a normal file.  
 This shell script is great for you to deal with an irresponsible professor.  
 
-### Help
-```sh
-sh ./moyu.sh
-# Run this shell script with no argument for help 
+
+
+### Run
+Feel free to choose between `moyu.sh` and `moyu.pl`!  
+Before running:  
+
+```shell
+chmod u+x moyu.sh
+# or
+chmod u+x moyu.pl
 ```
 
+Then, you can run the script simply by:  
+
+```shell
+./moyu.sh
+# or
+./moyu.pl
+# Run the shell script with no argument for help 
+```
+
+
 ### Result
-```sh
+```shell
 $ ls -alh
 total 4.5M
 drwxrwxr-x  2 ralxyz ralxyz 4.0K Mar 18 10:42 .
