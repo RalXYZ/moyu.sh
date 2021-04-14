@@ -12,20 +12,28 @@ Usage:
 Have fun!
 EOF
 
-if ($#ARGV == -1) {
-    print($manual);
-} elsif ($#ARGV == 1) {
-    if (-e $ARGV[0]) {
+sub create_file {
+    if (-e @_[0]) {
         print("Error: The file already exists\n");
-    } elsif ($ARGV[1] !~ /^\+?[1-9][0-9]*$/) {
+    } elsif (@_[1] !~ /^\+?[1-9][0-9]*$/) {
         print("Error: Please specify a correct file size\n");
     } else {
         system("dd if=/dev/urandom of=$ARGV[0] bs=1K count=$ARGV[1]");
+        return 0;
+    }
+    return 1;
+}
+
+if ($#ARGV == -1) {
+    print($manual);
+} elsif ($#ARGV == 1) {
+    $create_file_return = create_file($ARGV[0], $ARGV[1]);
+    if ($create_file_return == 0) {
         exit 0;
     }
 } else {
     print("Error: No such usage\n");
 }
 
-print("Run this shell script with no argument for help\n");
+print("Run this perl script with no argument for help\n");
 exit 1;
