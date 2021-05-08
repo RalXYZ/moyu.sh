@@ -2,6 +2,8 @@
 
 $manual = <<"EOF";
 Welcome to 摸鱼.pl
+  The original version of this script is a shell script
+  I chose to implement it again, but this time, using perl
   You can create a JUNK file in a specified size, which looks just like a normal file
   This shell script is great for you to deal with an irresponsible professor
 Before using, you are suggested to:
